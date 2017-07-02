@@ -2,6 +2,8 @@
 
 Experimental tab completion for [dzil](http://dzil.org/), the Perl distribution powertool for CPAN distribution.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Introduction
 
 This is based on Dist::Zilla 6.009.
