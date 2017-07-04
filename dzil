@@ -11,7 +11,12 @@ _dzil()
     prev="${COMP_WORDS[COMP_CWORD-1]}"
 
     local opts=$(dzil commands | sed 's/\([[:alnum:]]\):.*/\1/')
-    # local opts=`dzil commands`
+
+    if [[ "${prev}" == "authordeps" || "${prev}" == "listdeps" ]] ; then
+            local installopts="--missing"
+            COMPREPLY=( $(compgen -W "${installopts}" -- ${cur}) )
+        return 0
+    fi
 
     COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
 }
