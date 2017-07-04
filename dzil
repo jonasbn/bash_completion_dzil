@@ -3,6 +3,7 @@
 #
 #  dzil <tab>
 #
+
 _dzil()
 {
     local cur prev opts
@@ -11,6 +12,11 @@ _dzil()
     prev="${COMP_WORDS[COMP_CWORD-1]}"
 
     local opts=$(dzil commands | sed 's/\([[:alnum:]]\):.*/\1/')
+
+    #
+    #  dzil authordeps <tab>
+    #  dzil listdeps <tab>
+    #
 
     if [[ "${prev}" == "authordeps" || "${prev}" == "listdeps" ]] ; then
             local installopts="--missing"
