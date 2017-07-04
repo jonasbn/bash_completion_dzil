@@ -1,10 +1,14 @@
 # Dist::Zilla Bash Completion
 
-Experimental tab completion for [dzil](http://dzil.org/), the Perl distribution powertool for CPAN distribution.
+Basic tab completion for [dzil](http://dzil.org/), the Perl distribution powertool for CPAN distribution.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Introduction
+
+The completion implementation requires `dzil` to be installed (of course), it uses `dzil` built-in `commands` command to extract what is available and makes this accessible for tab completion.
+
+In addition installed Dist::Zilla command plugins are automatically exposed by `dzil` meaning that tab completions are also automatically supported.
 
 This is based on Dist::Zilla 6.009.
 
@@ -12,6 +16,23 @@ This is based on Dist::Zilla 6.009.
 
 ```bash
 $ dzil <tab>
+add    build    commands   help    listdeps   nop   run   smoke   authordeps   clean  install  new        release setup      test
+```
+
+If you have additional Dist::Zilla::App::Command plugins installed this will be discovered by Dist::Zilla and hence listed by this utility automatically.
+
+Example: [Dist::Zilla::App::Command::cover](https://metacpan.org/pod/Dist::Zilla::App::Command::cover)
+
+```bash
+$ dzil <tab>
+add    build    commands   help    listdeps   nop   run   smoke   authordeps   clean  install  new        release setup      cover test
+```
+
+`listdeps` and `authordeps` offer the additional completion: `--missing`
+
+```bash
+$ dzil listdeps <tab>
+--missing
 ```
 
 ## Download
