@@ -92,7 +92,7 @@ $ source /usr/local/share/bash-completion/completions/dzil
 
 ## Motivation
 
-The programmatic capabilities discovered while implementing my first `bash` completions intriqued me. This is a highly experimental feature, which nevertheless was lots of fun to implement.
+`dzil` is an important tool in my toolchain, so I wanted to have easy access to all the options available.
 
 ## History
 
