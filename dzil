@@ -18,9 +18,15 @@ _dzil()
     #  dzil listdeps <tab>
     #
 
-    if [[ "${prev}" == "authordeps" || "${prev}" == "listdeps" ]] ; then
-            local installopts="--missing"
-            COMPREPLY=( $(compgen -W "${installopts}" -- ${cur}) )
+    if [[ "${prev}" == "listdeps" ]] ; then
+        local opts="--missing --develop --author --missing --requires --no-requires --recommends --no-recommends --suggests --no-suggests --versions --cpanm-versions --json --omit-cores"
+            COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+
+        return 0
+
+    elif [[ "${prev}" == "authordeps" || "${prev}" == "listdeps" ]] ; then
+        local opts="--root --missing --versions"
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
     fi
 

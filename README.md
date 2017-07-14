@@ -28,11 +28,18 @@ $ dzil <tab>
 add    build    commands   help    listdeps   nop   run   smoke   authordeps   clean  install  new        release setup      cover test
 ```
 
-`listdeps` and `authordeps` offer the additional completion: `--missing`
+`listdeps` offer the additional completions:
 
 ```bash
 $ dzil listdeps <tab>
---missing
+--missing --develop --author --missing --requires --no-requires --recommends --no-recommends --suggests --no-suggests --versions --cpanm-versions --json --omit-cores
+```
+
+`authordeps` offer the additional completions:
+
+```bash
+$ dzil authordeps <tab>
+--root --missing --versions
 ```
 
 ## Download
