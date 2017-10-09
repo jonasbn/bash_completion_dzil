@@ -1,8 +1,9 @@
+# Bash completion for dzil:
+# dzil <tab>
 #
-#  Completion for dzil:
-#
-#  dzil <tab>
-#
+# Github: https://github.com/jonasbn/bash_completion_dzil
+# Copyright Jonas B. Nielsen (jonasbn) 2017
+# MIT License
 
 _dzil()
 {
