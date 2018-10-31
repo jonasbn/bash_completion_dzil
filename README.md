@@ -151,4 +151,4 @@ This is made available under the MIT license, see separate license file.
 
 ## Copyright
 
-:copyright: jonasbn 2017
+:copyright: jonasbn 2017-2018
