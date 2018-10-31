@@ -1,6 +1,6 @@
 # Dist::Zilla Bash Completion
 
-Basic tab completion for [dzil](http://dzil.org/), the Perl distribution powertool for CPAN distribution.
+Basic tab completion for [dzil](http://dzil.org/), the Perl distribution power-tool for CPAN distribution.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
