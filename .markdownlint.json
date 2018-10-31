@@ -2,7 +2,7 @@
     "default": true,
     "ul-style": { "style": "dash" },
     "ul-indent": true,
-    "MD013": false,
+    "line-length": false,
     "commands-show-output": false,
     "MD025": false,
     "MD026": false
