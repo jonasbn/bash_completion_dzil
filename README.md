@@ -125,7 +125,7 @@ $ source /usr/local/share/bash-completion/completions/dzil
 ## History
 
 - 1.0.0
-    + Initial version working with `bash` version 4.
+    - Initial version working with `bash` version 4.
 
 ## See Also
 
