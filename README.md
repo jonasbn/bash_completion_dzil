@@ -94,7 +94,9 @@ This assumes you are using **Homebrew**
 
 Do note that paths vary based on whether you are using `bash` 3 or 4
 
-#### `bash` 3 (Formula: `bash-completions`):
+#### `bash` 3
+
+Formula: `bash-completions`.
 
 ```bash
 $ cp dzil /usr/local/etc/bash_completion.d/
@@ -106,7 +108,9 @@ And to activate right away:
 $ source  /usr/local/etc/bash_completion.d/dzil
 ```
 
-#### `bash` 4 (Formula: `bash-completions2`)
+#### `bash` 4
+
+Formula: `bash-completions2`.
 
 ```bash
 $ cp dzil /usr/local/share/bash-completion/completions/

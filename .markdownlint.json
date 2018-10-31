@@ -2,6 +2,5 @@
     "default": true,
     "ul-style": { "style": "dash" },
     "line-length": false,
-    "commands-show-output": false,
-    "MD026": false
+    "commands-show-output": false
 }
