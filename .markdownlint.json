@@ -4,6 +4,5 @@
     "ul-indent": true,
     "line-length": false,
     "commands-show-output": false,
-    "MD025": false,
     "MD026": false
 }

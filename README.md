@@ -4,7 +4,7 @@ Basic tab completion for [dzil](http://dzil.org/), the Perl distribution power-t
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Introduction
+## Introduction
 
 The completion implementation requires `dzil` to be installed (of course), it uses `dzil` built-in `commands` command to extract what is available and makes this accessible for tab completion.
 
