@@ -60,7 +60,7 @@ Create the file: `~/.bash_completion`, containing the code below:
 
 ```bash
 for bcfile in ~/.bash_completion.d/* ; do
-  . $bcfile
+    . $bcfile
 done
 ```
 
@@ -69,13 +69,13 @@ Ref: [ServerFault.com: _Standard place for user defined bash_completion.d script
 Create a directory for your completions:
 
 ```bash
-$ mkdir ~/.bash_completion.d
+mkdir ~/.bash_completion.d
 ```
 
 Copy your completions into the newly created directory:
 
 ```bash
-$ cp dzil ~/.bash_completion.d/
+cp dzil ~/.bash_completion.d/
 ```
 
 Start a new shell and you should be good to go.
@@ -85,7 +85,7 @@ Start a new shell and you should be good to go.
 Based on [an introduction](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1) to `bash` completions on Debian.
 
 ```bash
-$ sudo cp dzil /etc/bash_completion.d/
+sudo cp dzil /etc/bash_completion.d/
 ```
 
 ### System-wide example from OSX
@@ -99,13 +99,13 @@ Do note that paths vary based on whether you are using `bash` 3 or 4
 Formula: `bash-completions`.
 
 ```bash
-$ cp dzil /usr/local/etc/bash_completion.d/
+cp dzil /usr/local/etc/bash_completion.d/
 ```
 
 And to activate right away:
 
 ```bash
-$ source  /usr/local/etc/bash_completion.d/dzil
+source  /usr/local/etc/bash_completion.d/dzil
 ```
 
 #### `bash` 4
@@ -113,13 +113,13 @@ $ source  /usr/local/etc/bash_completion.d/dzil
 Formula: `bash-completions2`.
 
 ```bash
-$ cp dzil /usr/local/share/bash-completion/completions/
+cp dzil /usr/local/share/bash-completion/completions/
 ```
 
 And to activate right away:
 
 ```bash
-$ source /usr/local/share/bash-completion/completions/dzil
+source /usr/local/share/bash-completion/completions/dzil
 ```
 
 ## Motivation
