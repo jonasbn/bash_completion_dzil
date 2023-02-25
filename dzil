@@ -28,10 +28,13 @@ _dzil()
     elif [[ "${prev}" == "authordeps" || "${prev}" == "listdeps" ]] ; then
         local opts="--root --missing --versions"
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+
         return 0
     fi
 
     COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+
+    return 0
 }
 
 complete -F _dzil dzil
