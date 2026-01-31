@@ -6,6 +6,6 @@ jobs:
     name: EditorConfig lint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@8e8c483cf6bd87dc884f148ac858e89d23c96640 # v6.0.1
-    - uses: editorconfig-checker/action-editorconfig-checker@4b6cd61bf909378e88965e29c1b4c03d0bc87b23 # v2.1.0
+    - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+    - uses: editorconfig-checker/action-editorconfig-checker@4b6cd6190d435e7e084fb35e36a096e98506f7b9 # v2.1.0
       name: Testing using editorconfig-checker
