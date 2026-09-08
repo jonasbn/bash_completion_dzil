@@ -6,3 +6,16 @@ toolchain
 Homebrew
 jonasbn
 CPAN
+EditorConfig
+Markdownlint
+ShellCheck
+aspell
+pyspelling
+config
+repo
+hardcoded
+whitespace
+LF
+md
+claude
+ai
