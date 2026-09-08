@@ -14,5 +14,7 @@ matrix:
       - code
       - pre
   sources:
-  - '**/*.md'
+  # Match every Markdown file, but skip AI-generated Markdown that is not
+  # authored prose: CLAUDE.md guidance and anything under .claude/.
+  - '**/*.md|!CLAUDE.md|!.claude/**'
   default_encoding: utf-8

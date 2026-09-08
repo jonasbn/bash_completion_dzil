@@ -37,7 +37,7 @@ CI runs on every push via four independent GitHub Actions workflows in
 | ShellCheck | `shellcheck dzil` | `.shellcheckrc` disables SC2148, SC2207, SC2086 |
 | EditorConfig | `editorconfig-checker` | `.editorconfig` — `[dzil]` section: 4-space indent, LF, final newline, no trailing whitespace |
 | Markdownlint | `npx markdownlint-cli --config .markdownlint.json .` | dash-style unordered lists, no line-length limit |
-| Spellcheck | `pyspelling -c .spellcheck.yml` | pyspelling + aspell over `**/*.md` |
+| Spellcheck | `pyspelling -c .spellcheck.yml` | pyspelling + aspell over `**/*.md`, excluding AI-generated Markdown (`CLAUDE.md`, `.claude/**`) |
 
 The `dzil` file has no extension; `.gitattributes` forces `linguist-language=Shell`
 and `.editorconfig` targets it by literal `[dzil]` section name — keep the
